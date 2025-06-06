@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Швидкодій</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      background:
+        radial-gradient(circle at 10% 20%, #e60073 0%, transparent 50%),
+        radial-gradient(circle at 90% 30%, #ff6600 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, #00cc66 0%, transparent 50%),
+        radial-gradient(circle at 70% 50%, #3399ff 0%, transparent 50%),
+        radial-gradient(circle at 30% 70%, #9933ff 0%, transparent 50%),
+        radial-gradient(circle at 60% 20%, #00bfff 0%, transparent 50%),
+        #111111;
+      background-blend-mode: screen;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 2.3rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #CCFF00;
+      font-weight: 800;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .subheader {
+      font-size: 1.3rem;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #CCFF00;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 500px;
+      width: 100%;
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      padding: 20px;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease;
+    }
+    .tile:hover {
+      transform: scale(1.05);
+    }
+    .mail { background: #ff3366; }
+    .calendar { background: #ffcc00; color: #000; }
+    .notion { background: #6633cc; }
+    .groceries { background: #00cc99; }
+    .food { background: #ff6600; }
+    .bookmarks { background: #66cc00; color: #000; }
+    .finance { background: #cc0033; }
+    .family { background: #9933ff; }
+    .footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Привіт, Анастасіє!</h1>
+  <div class="subheader">Ось твій неоновий лайм — яскравий, соковитий, як і ти 🍋⚡</div>
+  <div class="grid">
+    <div class="tile mail">📨<div>Пошта</div></div>
+    <div class="tile calendar">📅<div>Календар</div></div>
+    <div class="tile notion">🧾<div>Notion</div></div>
+    <div class="tile groceries">🛍️<div>Закупи</div></div>
+    <div class="tile food">🍽️<div>Рецепти</div></div>
+    <div class="tile bookmarks">🔖<div>Закладки</div></div>
+    <div class="tile finance">💸<div>Фінанси</div></div>
+    <div class="tile family">👨‍👩‍👦<div>Родина</div></div>
+  </div>
+  <div class="footer">© Швидкодій 2025</div>
+</body>
+</html>
